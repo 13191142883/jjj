@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component jdk="JavaSE-1.6">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="sqljdbc4.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/SOURCE-CORE-5/chapter05_03/lib/sqljdbc4.jar!/"/>
+	</lib>
+	<levels>
+		<level name="tomcat-api" value="project"/>
+	</levels>
+</component>
