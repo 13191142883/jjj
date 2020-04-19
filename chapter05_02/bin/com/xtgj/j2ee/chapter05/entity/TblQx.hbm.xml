@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping >
+	<class name="com.xtgj.j2ee.chapter05.entity.TblQx" table="TBL_QX" schema="dbo" catalog="zf">
+        <id name="qxid" column="qxid" type="integer"/>
+        <property name="qx" column="qx" type="string" not-null="false"/>
+         <set name="jds" inverse="true" lazy="false" cascade="all">
+			<key>
+				<column name="qxid" />
+			</key>
+			<one-to-many class="com.xtgj.j2ee.chapter05.entity.TblJd" />
+		</set>
+    </class>
+   
+</hibernate-mapping>
